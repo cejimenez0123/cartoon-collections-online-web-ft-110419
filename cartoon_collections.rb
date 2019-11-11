@@ -17,7 +17,9 @@ end
 def find_the_cheese(snack)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  snack.find(cheese_types)
+cheese_types.find do |item|
+  snack.include?(item)
+end
 
 
 
